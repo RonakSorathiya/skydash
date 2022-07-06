@@ -68,7 +68,7 @@
             }
 ?>
      <!-- partial -->
-      <div class="main-panel"> 
+      <!-- <div class="main-panel">  -->
                  
         <div class="content-wrapper">
           <div class="row">   
@@ -189,24 +189,24 @@
                     </div>
                      <h4 class="card-title">Family Details</h4>
                       <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="f_name"/>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="f_name"/>
+                            </div>
                           </div>
-                        </div>
-                      </div>                      
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Relationship</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="f_rel"/>
+                        </div>                      
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Relationship</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="f_rel"/>
+                            </div>
                           </div>
-                        </div>
-                      </div>                     
+                        </div>                     
                     </div>
-                     <div class="row">
+                    <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Age</label>
@@ -251,7 +251,7 @@
                         
                         <div class="form-group row">
                         <div class="col-sm-3">
-                            <input type="text" class="form-control" name="g_dsc "/>
+                            <input type="text" class="form-control" name="g_dsc"/>
                         </div>                         
                         <div class="col-sm-2">
                             <input type="number" class="form-control" name="g_freq"/>

@@ -1,3 +1,4 @@
+
 	<!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
@@ -22,7 +23,7 @@
   <script src="vendors/chart.js/Chart.min.js"></script>
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>
   <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-  <script src="js/dataTables.select.min.js"></script>
+  <!-- <script src="js/dataTables.select.min.js"></script> -->
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
@@ -32,10 +33,12 @@
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
   <!-- endinject -->
+  <script src="js/tabs.js"></script>
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+    <script src="js/data-table.js"></script>
 </body>
 
 </html>

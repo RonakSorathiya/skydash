@@ -2,7 +2,7 @@
 	include('header.php');
 ?>
 
-<div class="main-panel">
+<!-- <div class="main-panel"> -->
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-12 grid-margin">
@@ -637,6 +637,7 @@
               </div>
             </div>
         </div> -->
+      </div>
 <?php
 	include('footer.php');
 ?>
