@@ -36,8 +36,7 @@ if(isset($_POST['submit']))
                         <center><strong>Well Done!</strong> Succesfully Inserted</center>
                      </div>';
 }
-
-?>      
+?>    
 <div class="content-wrapper">
   <div class="row">
     <div class="col-md-12">

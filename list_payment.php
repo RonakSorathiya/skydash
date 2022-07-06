@@ -27,6 +27,8 @@ $action=0;$action_message="";
                           <th>Payment Date</th>
                           <th>Client Name</th>
                           <th>Image</th>
+                          <th>Edit</th>
+                          <th>Delete</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -45,6 +47,12 @@ $action=0;$action_message="";
                             <a href="img/<?php echo $row['image'] ?>" target="_blank">
                               <img src="img/<?php echo $row['image'] ?>" style="height: 50px;width: 50px;">
                             </a>
+                          </td>
+                          <td>
+                            <a href="payment_update.php?uid=<?php echo $row['payment_id']; ?>" class="btn btn-primary">Edit</a>
+                          </td>
+                          <td>
+                            <a href="server.php?did=<?php echo $row['payment_id']; ?>" class="btn btn-danger"  onclick="return confirm('Are you sure you want to delete this item')">Delete</a>
                           </td>
                         </tr>
                       <?php } ?>
