@@ -19,45 +19,29 @@ if(isset($_GET['uid']))
         <div class="card-body">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Payment Detail Update</h4>
+              <h3>Payment Detail Update</h3>
               <form class="form-sample" action="server.php" method="post" enctype="multipart/form-data">
                     
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Payment Type</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" name="u_payment_type" value="<?php echo $row['payment_type'] ?>" />
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2">Payment Type</label>
+                    <input type="text" class="form-control" name="u_payment_type" value="<?php echo $row['payment_type'] ?>" />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Payment Date</label>
-                      <div class="col-sm-9">
-                        <input type="date" class="form-control" name="u_payment_date"  value="<?php echo $row['payment_date'] ?>" />
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2">Payment Date</label>
+                    <input type="date" class="form-control" name="u_payment_date"  value="<?php echo $row['payment_date'] ?>" />
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Client Name</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" name="u_client_name"   value="<?php echo $row['client_name'] ?>"/>
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2">Client Name</label>
+                    <input type="text" class="form-control" name="u_client_name"   value="<?php echo $row['client_name'] ?>"/>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Image</label>
-                      <div class="col-sm-9">
-                        <img src="img/<?php echo $row['image'] ?>" width="50%"/>
-                        <input type="hidden" name="old_img" value="<?php echo $row['image'] ?>" />
-                        <input type="file" class="form-control mt-3" name="u_img" />
-                      </div>
-                    </div>
+                  <div class="col">
+                      <label class="mt-2 w-100">Image</label>
+                      <img src="img/<?php echo $row['image'] ?>" width="50%" class="mt-2"/>
+                      <input type="hidden" name="old_img" value="<?php echo $row['image'] ?>" />
+                      <input type="file" class="form-control mt-3" name="u_img" />
                   </div>
                 </div>
                 <div>

@@ -16,7 +16,7 @@ $action=0;$action_message="";
         <div class="card-body">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Payment Detail</h4>
+              <h3>Payment Detail</h3>
               <form class="form-sample" method="post" enctype="multipart/form-data">
                     <div class="table-responsive">
                     <table id="order-listing" class="table">
@@ -49,10 +49,10 @@ $action=0;$action_message="";
                             </a>
                           </td>
                           <td>
-                            <a href="payment_update.php?uid=<?php echo $row['payment_id']; ?>" class="btn btn-primary">Edit</a>
+                            <a href="payment_update.php?uid=<?php echo $row['payment_id']; ?>" class="btn btn-primary p-2">Edit</a>
                           </td>
                           <td>
-                            <a href="server.php?did=<?php echo $row['payment_id']; ?>" class="btn btn-danger"  onclick="return confirm('Are you sure you want to delete this item')">Delete</a>
+                            <a href="server.php?did=<?php echo $row['payment_id']; ?>" class="btn btn-danger p-2"  onclick="return confirm('Are you sure you want to delete this item')">Delete</a>
                           </td>
                         </tr>
                       <?php } ?>

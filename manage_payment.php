@@ -50,48 +50,32 @@ if(isset($_POST['submit']))
         <div class="card-body">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Payment Detail</h4>
+              <h3>Payment Detail</h3>
               <form class="form-sample" method="post" enctype="multipart/form-data">
                      <!--  <p class="card-description">
                         Personal info
                       </p> -->
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Payment Type</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" name="payment_type" />
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2" >Payment Type</label>
+                    <input type="text" class="form-control" name="payment_type" />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Payment_date</label>
-                      <div class="col-sm-9">
-                        <input type="date" class="form-control" name="payment_date" />
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2" >Payment_date</label>
+                    <input type="date" class="form-control" name="payment_date" />
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Client Name</label>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" name="client_name" />
-                      </div>
-                    </div>
+                  <div class="col">
+                    <label class="mt-2" >Client Name</label>
+                    <input type="text" class="form-control" name="client_name" />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-group row">
-                      <label class="col-sm-3 col-form-label">Image</label>
-                      <div class="col-sm-9">
+                  <div class="col">
+                      <label class="mt-2" >Image</label>
                         <input type="file" class="form-control" name="img" />
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2" name="submit">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3" name="submit">Submit</button>
               </form>
             </div>
           </div>

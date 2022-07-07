@@ -206,10 +206,10 @@
                             <input type="number" class="form-control" name="g_Inflation" style="padding-right :3px" />
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" class="form-control" name="g_st_year" style="padding:0;" />
+                            <input type="text" class="form-control text-center" name="g_st_year" style="padding:0;" />
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" class="form-control" name="g_end_year" style="padding:0;"/>
+                            <input type="text" class="form-control text-center" name="g_end_year" style="padding:0;"/>
                         </div>
                         <div class="col-sm-1">
                             <input type="text" class="form-control" name="g_priority" >                          
