@@ -88,147 +88,89 @@
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><div class="card-body">                  
                   <form class="form-sample" action="" method="POST">                    
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"> Self Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="s_name"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                          <label class="mt-2">Self Name</label>
+                          <input type="text" class="form-control" name="s_name"/>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Self Age</label>
-                          <div class="col-sm-9">
-                            <input type="number" class="form-control" name="s_age"/>
-                          </div>
-                        </div>
+                      <div class="col">            
+                          <label class="mt-2">Self Age</label>
+                          <input type="number" class="form-control" name="s_age"/>
                       </div>
                     </div>
                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"> Self Pan</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="s_pan"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2"> Self Pan</label>
+                        <input type="text" class="form-control" name="s_pan"/>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Self Occupation</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="s_occ"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Self Occupation</label>
+                        <input type="text" class="form-control" name="s_occ"/>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Spouse Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="sp_name">                             
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Spouse Age</label>
-                          <div class="col-sm-9">
-                            <input type="number" class="form-control" name="sp_age">                            
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Spouse Name</label>
+                        <input type="text" class="form-control" name="sp_name"> 
+                      </div>
+                      <div class="col">
+                        <label class="mt-2">Spouse Age</label>  
+                        <input type="number" class="form-control" name="sp_age">
                       </div>                     
                     </div>                    
                     <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Spouse Pan</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="sp_pan">                             
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Spouse Pan</label>
+                        <input type="text" class="form-control" name="sp_pan">
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Spouse Occupation</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="sp_occ"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                          <label class="mt-2">Spouse Occupation</label>  
+                          <input type="text" class="form-control" name="sp_occ"/>
                       </div>                      
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Personal Contact</label>
-                          <div class="col-sm-9">
-                            <input type="number" class="form-control" name="p_contact"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Personal Contact</label>                        
+                        <input type="number" class="form-control" name="p_contact"/>
                       </div>                      
                       <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Personal Email</label>
-                          <div class="col-sm-9">
-                            <input type="email" class="form-control" name="p_email"/>
-                          </div>
-                        </div>
+                        <label class="mt-2">Personal Email</label>
+                        <input type="email" class="form-control" name="p_email"/> 
                       </div>                     
                     </div>
                     <div class="row">
                        <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Personal Address</label>
-                          <div class="col-sm-9">
-                            <textarea rows="4" class="form-control" name="p_add"/> </textarea> 
-                          </div>
-                        </div>
+                          <label class="mt-2">Personal Address</label>
+                          <textarea rows="4" class="form-control" name="p_add"/> </textarea> 
                       </div>                   
                     </div>
-                     <h4 class="card-title">Family Details</h4>
+                    <h3 class="row mt-3">Family Details</h3>
                       <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" name="f_name"/>
-                            </div>
-                          </div>
+                        <div class="col">
+                          <label class="mt-2">Name</label>
+                          <input type="text" class="form-control" name="f_name"/>
                         </div>                      
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Relationship</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" name="f_rel"/>
-                            </div>
-                          </div>
+                        <div class="col">
+                          <label class="mt-2">Relationship</label>
+                          <input type="text" class="form-control" name="f_rel"/>
                         </div>                     
                     </div>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Age</label>
-                          <div class="col-sm-9">
-                            <input type="number" class="form-control" name="f_age"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Age</label>
+                        <input type="number" class="form-control" name="f_age"/>
                       </div>                      
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Dependant</label>
-                          <div class="col-sm-9">
+                      <div class="col">
+                          <label class="mt-2">Dependant</label>
+                          
                             <!-- <input type="text" /> -->
                             <select class="form-control" name="f_dpn">
                               <option>Yes</option>
                               <option>No</option>
                             </select>
-                          </div>
-                        </div>
+
                       </div>                     
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-5" name="submit">Submit</button>
                   </form>                 
                 </div>
             </div>
@@ -237,7 +179,7 @@
                   <form class="form-sample" action="" method="POST">                    
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="form-group row">
+                        <div class="form-group-sm row">
                         <label class="col-sm-3 col-form-label">Description</label>                          
                         <label class="col-sm-2 col-form-label">Frequency</label>
                         <label class="col-sm-2 col-form-label">Goal Rs</label>                          
@@ -245,10 +187,11 @@
                         <label class="col-sm-1 col-form-label">Start Year</label>  
                         <label class="col-sm-1 col-form-label">End Year</label>  
                         <label class="col-sm-1 col-form-label">Priority</label>                         
-                        <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;"><i class="ti-plus" ></i>
+                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;">
+                          <i class="ti-plus" ></i>
                         </button> 
                         </div>
-                        
+
                         <div class="form-group row">
                         <div class="col-sm-3">
                             <input type="text" class="form-control" name="g_dsc"/>
@@ -260,31 +203,36 @@
                             <input type="number" class="form-control" name="g_value"/>
                         </div>                         
                         <div class="col-sm-1">
-                            <input type="number" class="form-control" name="g_Inflation"/>
+                            <input type="number" class="form-control" name="g_Inflation" style="padding-right :3px" />
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" class="form-control" name="g_st_year"/>
+                            <input type="text" class="form-control" name="g_st_year" style="padding:0;" />
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" class="form-control" name="g_end_year"/>
+                            <input type="text" class="form-control" name="g_end_year" style="padding:0;"/>
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" class="form-control" name="g_priority">                          
+                            <input type="text" class="form-control" name="g_priority" >                          
                         </div> 
                         <!-- <button type="submit" class="col-sm-1 btn btn-success" name="submit">Add</button> -->
-                        <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;">
-                        <i class="ti-minus" ></i>
-                      </button>                           
+                      
+                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;" >
+                        <i class="ti-minus"></i>
+                        </button>                           
+                        
                       </div>
 
-                       <h4 class="card-title">Note:</h4> 
+                      <h3 class="row">Note:</h3>
                       <div class="col-md-12">
-                        <div class="form-group row">
+                        
+                        <div class="form-group-sm row">
+                        
                           <label class="col-sm-5 col-form-label">Note</label>  
-                          <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;"><i class="ti-plus" ></i>
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;">
+                            <i class="ti-plus" ></i>
                           </button> 
-                          <label class="col-sm-5 col-form-label">Risk Level</label>  
-                          <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;"><i class="ti-plus" ></i>
+                          <label class="col-sm-5 col-form-label ml-4">Risk Level</label>  
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;"><i class="ti-plus" ></i>
                           </button> 
                         </div>
                         
@@ -292,22 +240,23 @@
                         <div class="col-sm-5">
                             <textarea rows="5" class="form-control" name="note"/></textarea>
                         </div> 
-                        <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;">
+                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
                         <i class="ti-minus" ></i>
                       </button>   
-                       <div class="col-sm-5">
+                       <div class="col-sm-5 ml-4">
                             <textarea rows="5" class="form-control" name="risk_level"/></textarea>
                         </div> 
-                        <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;">
+
+                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
                         <i class="ti-minus" ></i>
                       </button>                         
                       </div>                                           
                     </div> 
-                     <h4 class="card-title">Assumption:</h4> 
+                     <h3 class="row">Assumption:</h3> 
                       <div class="col-md-12">
-                        <div class="form-group row">
+                        <div class="form-group-sm row">
                           <label class="col-sm-5 col-form-label">Assumption</label>  
-                          <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;"><i class="ti-plus" ></i>
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;"><i class="ti-plus" ></i>
                           </button> 
                           
                         </div>
@@ -316,7 +265,7 @@
                         <div class="col-sm-5">
                             <textarea rows="5" class="form-control" name="a_description"/></textarea>
                         </div> 
-                        <button type="button" class="col-sm-1 btn btn-primary btn-rounded btn-icon" style="flex: 0 0 8.33333%!important;">
+                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
                         <i class="ti-minus" ></i>
                       </button>   
                                                  
