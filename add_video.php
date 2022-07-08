@@ -39,70 +39,40 @@
 ?>
      <!-- partial -->
       <!-- <div class="main-panel">  -->
-                 
-        <div class="content-wrapper">
-          <div class="row">   
-               
-            <div class="col-md-12 grid-margin">
-              <div class="container">
+      <div class="content-wrapper">
+          <div class="card mt-3">
+            <div class="card-body">
+
               <h2>Add Video</h2>
-              </div>
-              <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"></a>
-            
-          </div>
-          </nav>
-              <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="card-body">                  
+  
                   <form class="form-sample" action="" method="POST">                    
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"> video_url</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" name="video_url"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Video URL</label>
+                        <input type="text" class="form-control" name="video_url"/>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">upload_date</label>
-                          <div class="col-sm-9">
-                            <input type="date" class="form-control" name="upload_date"/>
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Upload Date</label>
+                        <input type="date" class="form-control" name="upload_date"/>
                       </div>
                     </div>
                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">status</label>
-                          <div class="col-sm-9">
-                          	<select class="form-control" name="s_pan">
-                          		<option>Active</option>
-                          		<option>Deactive</option>>
-                          	</select>
-                            <!-- <input type="text" /> -->
-                          </div>
-                        </div>
+                      <div class="col">
+                        <label class="mt-2">Status</label>
+                            <select class="form-control" name="s_pan">
+                              <option>Active</option>
+                              <option>Deactive</option>>
+                            </select>
                       </div>
-                      
+                          
+                            <!-- <input type="text" /> -->
                     </div>
                     
-                    <button type="submit" class="btn btn-primary mb-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-3" name="submit">Submit</button>
                   </form>                 
-                </div>
-              	</div>
-              
-         	  </div>
               </div>
-            </div>
-          </div>
-      <!--   </div>
-      </div>
-				 -->
+            </div>  
+        </div>     	
 				
         <!-- content-wrapper ends --> 
 <?php

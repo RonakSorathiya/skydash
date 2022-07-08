@@ -20,7 +20,7 @@ $action=0;$action_message="";
               <form class="form-sample" method="post" enctype="multipart/form-data">
                     <div class="table-responsive">
                     <table id="order-listing" class="table">
-                      <thead>
+                      <thead class="bg-dark text-light">
                         <tr>
                           <th>#</th>
                           <th>Payment Type</th>

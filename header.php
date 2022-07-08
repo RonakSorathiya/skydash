@@ -399,19 +399,25 @@
               </ul>
             </div> -->
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="add_video.php"  aria-controls="form-elements">
-              <i class="icon-ban menu-icon"></i>
+            <a class="nav-link" data-toggle="collapse" href="#ui-video" aria-expanded="false" aria-controls="ui-video">
+              <i class="icon-video menu-icon"></i>
+              <span class="glyphicon glyphicon-play"></span>    
               <span class="menu-title">Video</span>
-             <!--  <i class="menu-arrow"></i> -->
+              <i class="menu-arrow"></i>
             </a>
-            <!-- <div class="collapse" id="error">
+            
+            <div class="collapse" id="ui-video">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+               <li class="nav-item"> <a class="nav-link" href="add_video.php"> Add </a></li>
+                <li class="nav-item"> <a class="nav-link" href="list_video.php"> List </a></li>
+               
               </ul>
-            </div> -->
+            </div>
           </li>
+
+
           <li class="nav-item">
             <a class="nav-link" href="history.php"  aria-controls="form-elements">
               <i class="icon-ban menu-icon"></i>

@@ -61,4 +61,21 @@ if (isset($_POST['update']))
 		}
 
 }
+
+if (isset($_POST['v_update'])) 
+{
+	$vid=$_POST['hid'];
+	$url=$_POST['u_video_url'];
+	$date=$_POST['u_upload_date'];
+	
+	$query="UPDATE `add_video` SET `video_url`='$url',`upload_date`='$date'
+			WHERE `video_id`='$vid'";
+	$data=mysqli_query($conn,$query);
+
+	if ($data) 
+	{
+		echo "<script>alert('Data Updated Successfully.')</script>";
+		echo "<script>window.location.href='list_video.php'</script>";
+	}
+}
 ?>
