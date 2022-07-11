@@ -79,9 +79,9 @@
               </div>
          <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Personal Details</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Financial Goals</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Net Worth</a>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
@@ -170,10 +170,11 @@
 
                       </div>                     
                     </div>
-                    <button type="submit" class="btn btn-primary mt-5" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-5" name="submit">Next</button>
                   </form>                 
                 </div>
             </div>
+            <!------ TAB-2------>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <div class="card-body">                  
                   <form class="form-sample" action="" method="POST">                    
@@ -224,20 +225,22 @@
 
                       <h3 class="row">Note:</h3>
                       <div class="col-md-12">
-                        
-                        <div class="form-group-sm row">
-                        
-                          <label class="col-sm-5 col-form-label">Note</label>  
-                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;">
-                            <i class="ti-plus" ></i>
-                          </button> 
-                          <label class="col-sm-5 col-form-label ml-4">Risk Level</label>  
+                          <div class="row">
+                                 <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;"><i class="ti-plus" ></i>
+                                </button>&nbsp;&nbsp;
+                                <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;"><i class="ti-minus" ></i>
+                                </button><br/><br/>
+                                <textarea rows="5" class="form-control" name="note"/></textarea>
+                          </div>
+
+                                 
+                                <!-- <label class="col-sm-5 col-form-label ml-4">Risk Level</label>  
                           <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height:25px;"><i class="ti-plus" ></i>
-                          </button> 
+                          </button>  -->
                         </div>
                         
-                        <div class="form-group row">
-                        <div class="col-sm-5">
+                        
+                        <!-- <div class="col-sm-5">
                             <textarea rows="5" class="form-control" name="note"/></textarea>
                         </div> 
                         <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
@@ -250,30 +253,29 @@
                         <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
                         <i class="ti-minus" ></i>
                       </button>                         
-                      </div>                                           
-                    </div> 
+                      </div>       -->                                     
+                      <br/>
                      <h3 class="row">Assumption:</h3> 
                       <div class="col-md-12">
                         <div class="form-group-sm row">
-                          <label class="col-sm-5 col-form-label">Assumption</label>  
-                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;"><i class="ti-plus" ></i>
-                          </button> 
                           
-                        </div>
-                        
-                        <div class="form-group row">
-                        <div class="col-sm-5">
-                            <textarea rows="5" class="form-control" name="a_description"/></textarea>
-                        </div> 
-                        <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
-                        <i class="ti-minus" ></i>
-                      </button>   
-                                                 
-                      </div>                                           
-                    </div>        
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;"><i class="ti-plus" ></i>
+                          </button> &nbsp;&nbsp;
+                          <button type="button" class="btn btn-primary btn-rounded btn-icon mt-2" style="height: 25px;">
+                              <i class="ti-minus" ></i>
+                          </button> <br/><br/>
+                          <textarea rows="5" class="form-control" name="a_description"/></textarea>
+                          <br/><br/>
+                        </div>                                 
+                    </div> <br/>
+                    <h3 class="row">Risk Level:</h3> 
+                    <div class="form-group-sm row">
+
+                        <textarea rows="5" class="form-control" name="risk_level"/></textarea>
+                    </div><br/>       
                     </div>                     
                     
-                    <button type="submit" class="btn btn-primary mb-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mb-2" name="submit">Next</button>
                   </form>
                  
             </div>

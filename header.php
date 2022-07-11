@@ -314,7 +314,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="company payment.php"  aria-controls="form-elements">
+            <a class="nav-link" href="wealth-plan.php"  aria-controls="form-elements">
            <i class="icon-columns menu-icon"></i>
               <span class="menu-title">Wealth Plan</span>
               <!-- <i class="menu-arrow"></i> -->
