@@ -8,7 +8,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>SFC | Admin Panel</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
@@ -31,8 +31,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.png" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="Dashboard.php"><img src="images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="Dashboard.php"><img src="images/logo.png" class="mr-5" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -40,14 +40,7 @@
         </button>
         <ul class="navbar-nav mr-lg-2">
           <li class="nav-item nav-search d-none d-lg-block">
-            <div class="input-group">
-              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
-                <span class="input-group-text" id="search">
-                  <i class="icon-search"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
-            </div>
+            
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
@@ -309,24 +302,33 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">Customer Login</span>
+              <span class="menu-title">Client List</span>
               <i class="menu-arrow"></i>
             </a>
            	
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
- 				       <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+ 				       <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php">View</a></li>
+               
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="company payment.php"  aria-controls="form-elements">
            <i class="icon-columns menu-icon"></i>
-              <span class="menu-title">Customer Payment</span>
+              <span class="menu-title">Wealth Plan</span>
+              <!-- <i class="menu-arrow"></i> -->
+            </a>
+            <!-- <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div> -->
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#"  aria-controls="form-elements">
+           <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Data Gathering</span>
               <!-- <i class="menu-arrow"></i> -->
             </a>
             <!-- <div class="collapse" id="form-elements">
@@ -338,7 +340,7 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-payment" aria-expanded="false" aria-controls="ui-payment">
               <i class="menu-icon"> &#8377;</i>
-              <span class="menu-title">Payment</span>
+              <span class="menu-title">Client Payment</span>
               <i class="menu-arrow"></i>
             </a>
             
@@ -351,41 +353,22 @@
             </div>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="income_expense.php"  aria-controls="form-elements">
-              <i class="icon-bar-graph menu-icon"></i>
-              <span class="menu-title">Income/Expenses</span>
-             <!--  <i class="menu-arrow"></i> -->
+            <a class="nav-link" data-toggle="collapse" href="#ui-ie" aria-expanded="false" aria-controls="ui-ie">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Income/Expense</span>
+              <i class="menu-arrow"></i>
             </a>
-            <!-- <div class="collapse" id="charts">
+            
+            <div class="collapse" id="ui-ie">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+               <li class="nav-item"> <a class="nav-link" href="#">Add Income</a></li>
+               <li class="nav-item"> <a class="nav-link" href="#">Add Expense</a></li>
+               
               </ul>
-            </div> -->
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="financial portfolio.php"  aria-controls="form-elements">
-              <i class="icon-grid-2 menu-icon"></i>
-              <span class="menu-title">Financial Portfolio</span>
-             <!--  <i class="menu-arrow"></i> -->
-            </a>
-            <!-- <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="basic-table.html">Basic table</a></li>
-              </ul>
-            </div> -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="company payment.php"  aria-controls="form-elements">
-              <i class="icon-contract menu-icon"></i>
-              <span class="menu-title">Company Payment</span>
-              <!-- <i class="menu-arrow"></i> -->
-            </a>
-            <!-- <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
-              </ul>
-            </div> -->
-          </li>
+          
+         
           <li class="nav-item">
             <a class="nav-link" href="appointment.php"  aria-controls="form-elements">
               <i class="icon-head menu-icon"></i>
