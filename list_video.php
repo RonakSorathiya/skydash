@@ -98,7 +98,7 @@
 									?>
 								</td>
 								<td>
-                                    <a title="Edit Detail" href="edit_video.php?video_id=<?php echo $result['video_id']?>" class="btn btn-primary p-2" >Edit</a>
+                                    <a title="Edit Detail" href="update_video.php?video_id=<?php echo $result['video_id']?>" class="btn btn-primary p-2" >Edit</a>
                                 </td>
                                 <td>
                                     <a title="Delete Detail" 

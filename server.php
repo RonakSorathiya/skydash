@@ -78,4 +78,72 @@ if (isset($_POST['v_update']))
 		echo "<script>window.location.href='list_video.php'</script>";
 	}
 }
+
+if (isset($_POST['add_income'])) 
+{
+
+	$i_c=$_POST['income_category'];
+	$date=date('Y-m-d');
+	
+	$query="INSERT INTO `add_income`(`income_category`, `date`)
+			 VALUES ('$i_c','$date')";
+	$data=mysqli_query($conn,$query);
+
+	if ($data) 
+	{
+		echo "<script>alert('Data Inserted Successfully.')</script>";
+		echo "<script>window.location.href='list_income.php'</script>";
+	}
+}
+
+if (isset($_POST['update_income'])) 
+{
+	$id=$_POST['hid'];
+	$income_category=$_POST['income_category'];
+	$date=date('Y-m-d');
+	
+	$query="UPDATE `add_income` SET `income_category`='$income_category',`date`='$date'
+			WHERE `income_id`='$id'";
+	$data=mysqli_query($conn,$query);
+
+	if ($data) 
+	{
+		echo "<script>alert('Data Updated Successfully.')</script>";
+		echo "<script>window.location.href='list_income.php'</script>";
+	}
+}
+
+if (isset($_POST['add_expense'])) 
+{
+	$expense_category=$_POST['expecse_category'];
+	$date=date('Y-m-d');
+	
+	$query="INSERT INTO `add_expense`(`expense_category`, `date`) 
+			VALUES ('$expense_category','$date')";
+	$data=mysqli_query($conn,$query);
+
+	if ($data) 
+	{
+		echo "<script>alert('Data Inserted Successfully.')</script>";
+		echo "<script>window.location.href='list_expense.php'</script>";
+	}
+}
+
+if (isset($_POST['update_expense'])) 
+{
+	$id=$_POST['hid'];
+	$expense_category=$_POST['expense_category'];
+	$date=date('Y-m-d');
+	
+	$query="UPDATE `add_expense` SET `expense_category`='$expense_category',`date`='$date'
+			WHERE `expense_id`='$id'";
+	$data=mysqli_query($conn,$query);
+
+	if ($data) 
+	{
+		echo "<script>alert('Data Updated Successfully.')</script>";
+		echo "<script>window.location.href='list_expense.php'</script>";
+	}
+}
+
 ?>

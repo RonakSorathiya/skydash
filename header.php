@@ -361,9 +361,10 @@
             
             <div class="collapse" id="ui-ie">
               <ul class="nav flex-column sub-menu">
-               <li class="nav-item"> <a class="nav-link" href="#">Add Income</a></li>
-               <li class="nav-item"> <a class="nav-link" href="#">Add Expense</a></li>
-               
+               <li class="nav-item"> <a class="nav-link" href="add_income.php">Add Income</a></li>
+               <li class="nav-item"> <a class="nav-link" href="list_income.php">View Income</a></li>
+               <li class="nav-item"> <a class="nav-link" href="add_expense.php">Add Expense</a></li>
+               <li class="nav-item"> <a class="nav-link" href="list_expense.php">View Expense</a></li>
               </ul>
             </div>
           </li>
