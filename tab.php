@@ -1,5 +1,7 @@
 <?php
   include('header.php');
+
+  print_r($_POST);
 ?>
      <!-- partial -->
       <div class="main-panel">        

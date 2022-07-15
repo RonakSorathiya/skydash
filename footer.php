@@ -19,6 +19,10 @@
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
+    <!-- Plugin js for this page-->
+  <script src="vendors/jquery-steps/jquery.steps.min.js"></script>
+  <script src="vendors/jquery-validation/jquery.validate.min.js"></script>
+  <!-- End plugin js for this page-->
   <!-- Plugin js for this page -->
   <script src="vendors/chart.js/Chart.min.js"></script>
   <script src="vendors/datatables.net/jquery.dataTables.js"></script>
@@ -33,12 +37,17 @@
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
   <!-- endinject -->
-  <script src="js/tabs.js"></script>
+  <!-- <script src="js/tabs.js"></script> -->
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
     <script src="js/data-table.js"></script>
+
+ 
+   <!-- Custom js for this page-->
+  <script src="js/wizard.js"></script>
+  <!-- End custom js for this page-->
 </body>
 
 </html>
