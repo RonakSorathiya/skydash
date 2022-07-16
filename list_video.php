@@ -65,11 +65,11 @@
                             <tr>
                                 <td><?php echo $i++; ?></td>
                                 <td>
-                                   <!--  <iframe width="100" height="100" src="<?php echo $result['video_url']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    <iframe width="100" height="100" src="<?php echo $result['video_url']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                         
-                                    </iframe> -->
-                                    <?php echo $result['video_url']?>
-
+                                    </iframe>
+                                    <!-- <?php echo $result['video_url']?>
+ -->
                                                    <!--  <video>
                                                         <source src="<?php echo $result['video_url'] ?>" type="">
                                                     </video> -->
