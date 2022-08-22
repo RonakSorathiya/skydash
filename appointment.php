@@ -1,9 +1,18 @@
 <?php
   include('header.php');
+  $action=0;
 ?>
      <!-- partial -->
       <!-- <div class="main-panel">         -->
         <div class="content-wrapper">
+          <div c
+          <?php
+              if($action>0)
+              {
+                echo $action_message;
+              }
+           ?>lass="col-md-12">
+          </div>
           <div class="row">
          <!--    <div class="col-md-6 grid-margin stretch-card">
               <div class="card">

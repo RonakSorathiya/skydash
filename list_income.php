@@ -18,10 +18,8 @@
 
  <!-- PAGE CONTENT WRAPPER -->
     <div class="content-wrapper">                
-        <div class="card">
-            <div class="card-body">
-            
-                <?php 
+        <div class="col-md-12">
+             <?php 
                     if($action==1)
                     {
                 ?>         
@@ -33,6 +31,11 @@
                 <?php 
                     }
                 ?>
+            </div>
+        <div class="card">
+            <div class="card-body">
+            
+               
 
                 <h3>All Incomes</h3>
                 <!-- START DEFAULT DATATABLE -->

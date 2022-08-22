@@ -3,12 +3,12 @@
   include 'header.php';
 
   $action = 0;$action_message = "";
-    if(isset($_GET['type']) && $_GET['type']!=='' && isset($_GET['expense_id']))
+    if(isset($_GET['type']) && $_GET['type']!=='' && isset($_GET['client_id']))
     {
         $type = $_GET['type'];
-        $expense_id = $_GET['expense_id'];
+        $client_id = $_GET['client_id'];
         if($type == 'delete'){
-            mysqli_query($conn,"delete from add_expense where expense_id='$expense_id'");
+            mysqli_query($conn,"delete from add_client where client_id='$client_id'");
             $action=1;
             $action_message = "Record deleted successfully.";
         }
@@ -19,7 +19,7 @@
  <!-- PAGE CONTENT WRAPPER -->
     <div class="content-wrapper">  
     <div class="col-md-12">              
-        <?php 
+         <?php 
                     if($action==1)
                     {
                 ?>         
@@ -31,25 +31,26 @@
                 <?php 
                     }
                 ?>
-            </div>
+    </div>
         <div class="card">
             <div class="card-body">
             
-                
+               
 
-                <h3>All expenses</h3>
+                <h3>Client Details</h3>
                 <!-- START DEFAULT DATATABLE -->
                     <table class="table table-striped" id="order-listing">
                         <thead class="bg-dark text-light">
-                            <th data-sortable="true">No</th>
-                            <th>Category</th>
-                            <th>Date</th>
-                            <th>Edit</th> 
+                            <th>No</th>
+                            <th>Client Name</th>
+                            <th>Phone Number</th>
+                            <th>Email Address</th>
+                            <th>Edit</th>
                             <th>Delete</th>
                         </thead>
                         <tbody>
                         <?php 
-                            $client_result = mysqli_query($conn,"SELECT * FROM add_expense");
+                            $client_result = mysqli_query($conn,"SELECT * FROM add_client");
                             $i=1;
                             
                             while($result = mysqli_fetch_array($client_result))
@@ -57,15 +58,15 @@
                         ?>
                             <tr>
                                 <td><?php echo $i++; ?></td>
-                                <td><?php echo $result['expense_category']; ?></td>
-                                <td><?php echo $result['date']; ?></td>
-                              
-                <td>
-                                    <a title="Edit Detail" href="update_expense.php?expense_id=<?php echo $result['expense_id']?>" class="btn btn-primary p-2" >Edit</a>
+                                <td><?php echo $result['client_name'] ?></td>
+                                <td><?php echo $result['phone_number'] ?></td>
+                                <td><?php echo $result['email_address'] ?></td>
+                                <td>
+                                    <a title="Edit Detail" href="update_client.php?client_id=<?php echo $result['client_id']?>" class="btn btn-primary p-2" >Edit</a>
                                 </td>
                                 <td>
                                     <a title="Delete Detail" 
-                                        href="?expense_id=<?php echo $result['expense_id']?>&type=delete" onclick=" return confirm('Are you sure you want to delete record?');"
+                                        href="?client_id=<?php echo $result['client_id']?>&type=delete" onclick=" return confirm('Are you sure you want to delete record?');"
                                                         class="btn btn-danger p-2">Delete
                                     </a>
                                 </td>
@@ -85,6 +86,6 @@
 <script type="text/javascript">
   $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
       $("#success-alert").slideUp(500);
-      window.location.href = 'list_expense.php';
+      window.location.href = 'list_client.php';
   });
 </script>

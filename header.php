@@ -305,6 +305,21 @@
               <span class="menu-title">Client List</span>
               <i class="menu-arrow"></i>
             </a>
+            
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> 
+                <a class="nav-link" href="list_client.php"> List </a>
+               </li>
+              </ul>
+            </div>
+          </li>
+        <!--   <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Client List</span>
+              <i class="menu-arrow"></i>
+            </a>
            	
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
@@ -312,7 +327,7 @@
                
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="personal_details.php"  aria-controls="form-elements">
            <i class="icon-columns menu-icon"></i>
@@ -325,6 +340,18 @@
               </ul>
             </div> -->
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="net_worth.php"  aria-controls="form-elements">
+           <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">Net Worth</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+              </ul>
+            </div>
+          </li> -->
            <li class="nav-item">
             <a class="nav-link" href="#"  aria-controls="form-elements">
            <i class="icon-columns menu-icon"></i>
@@ -370,19 +397,14 @@
           </li>
           
          
-          <li class="nav-item">
-            <a class="nav-link" href="appointment.php"  aria-controls="form-elements">
+         <li class="nav-item">
+            <a class="nav-link" href="list_appointment.php"  aria-controls="form-elements">
               <i class="icon-head menu-icon"></i>
               <span class="menu-title">Appointment</span>
-             <!--  <i class="menu-arrow"></i> -->
             </a>
-            <!-- <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-              </ul>
-            </div> -->
+    
           </li>
+
 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-video" aria-expanded="false" aria-controls="ui-video">
@@ -400,34 +422,66 @@
               </ul>
             </div>
           </li>
-
+           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-c-master" aria-expanded="false" aria-controls="ui-c-master">
+              <i class="icon-book menu-icon"></i>
+              <span class="glyphicon glyphicon-play"></span>    
+              <span class="menu-title">Course Master</span>
+              <i class="menu-arrow"></i>
+            </a>
+            
+            <div class="collapse" id="ui-c-master">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="add_course_master.php"> Add </a></li>
+                <li class="nav-item"> <a class="nav-link" href="list_course_master.php"> List </a></li>
+               
+              </ul>
+            </div>
+          </li>
 
           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-c-payment" aria-expanded="false" aria-controls="ui-c-payment">
+              <i class="icon-video menu-icon"></i>
+              <span class="glyphicon glyphicon-play"></span>    
+              <span class="menu-title">Course Payment</span>
+              <i class="menu-arrow"></i>
+            </a>
+            
+            <div class="collapse" id="ui-c-payment">
+              <ul class="nav flex-column sub-menu">
+               <li class="nav-item"> <a class="nav-link" href="add_course_payment.php"> Add </a></li>
+                <li class="nav-item"> <a class="nav-link" href="list_course_payment.php"> List </a></li>
+               
+              </ul>
+            </div>
+          </li>
+
+      <!--     <li class="nav-item">
             <a class="nav-link" href="history.php"  aria-controls="form-elements">
               <i class="icon-ban menu-icon"></i>
               <span class="menu-title">History</span>
-              <!-- <i class="menu-arrow"></i> -->
+              <i class="menu-arrow"></i>
             </a>
-            <!-- <div class="collapse" id="error">
+            <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
               </ul>
-            </div> -->
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="calculator.php"  aria-controls="form-elements">
               <i class="icon-ban menu-icon"></i>
               <span class="menu-title">Calculator</span>
-              <!-- <i class="menu-arrow"></i> -->
+              <i class="menu-arrow"></i>
             </a>
-            <!-- <div class="collapse" id="error">
+            <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
               </ul>
-            </div> -->
-          </li>
+            </div>
+          </li> -->
         </ul>
       </nav>
       <!-- partial -->

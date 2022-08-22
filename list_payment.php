@@ -6,12 +6,15 @@ $action=0;$action_message="";
 <div class="content-wrapper">
   <div class="row">
     <div class="col-md-12">
-      <?php
-          if($action>0)
+     <div class="col-md-12">
+          <?php
+             if(isset($_SESSION['action'])>0)
           {
-            echo $action_message;
+            echo $_SESSION['action_message'];
+            unset($_SESSION['action']);
           }
-       ?>
+           ?>
+         </div>
    		<div class="card">
         <div class="card-body">
           <div class="card">

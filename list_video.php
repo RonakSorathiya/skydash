@@ -27,22 +27,25 @@
 
 
  <!-- PAGE CONTENT WRAPPER -->
-    <div class="content-wrapper">                
+    <div class="content-wrapper">  
+    <div class="col-md-12">              
+        <?php 
+                    if($action==1)
+                    {
+                ?>         
+                        <div class="alert alert-success" id="success-alert" role="alert">
+                                <center><strong>Well Done!</strong>  
+                                    <?php echo $action_message; ?>
+                              </center>
+                         </div>    
+                <?php 
+                    }
+                ?>
+    </div>
         <div class="card">
             <div class="card-body">
             
-            	<?php 
-			        if($action==1)
-			        {
-			    ?>         
-                        <div class="alert alert-success" id="success-alert" role="alert">
-			                  	<center><strong>Well Done!</strong>  
-                                    <?php echo $action_message; ?>
-                              </center>
-			             </div>    
-			    <?php 
-			        }
-			    ?>
+            	
                 <h3>All Videos</h3>
                 <!-- START DEFAULT DATATABLE -->
                     <table class="table table-striped" id="order-listing">

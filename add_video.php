@@ -28,8 +28,11 @@
         }
         if($sql_person)
             {
+            
                 $action=1;
-                $action_message = "Successfully Inserted".mysqli_error($conn);
+                $action_message = '<div class="alert alert-success" id="success-alert" role="alert">
+                        <center><strong>Well Done!</strong> Succesfully Inserted</center>
+                     </div>';
             }
             else
             {
@@ -40,6 +43,14 @@
      <!-- partial -->
       <!-- <div class="main-panel">  -->
       <div class="content-wrapper">
+        <div class="col-md-12">
+           <?php
+          if($action>0)
+          {
+            echo $action_message;
+          }
+       ?>
+        </div>
           <div class="card mt-3">
             <div class="card-body">
 
@@ -49,11 +60,11 @@
                     <div class="row">
                       <div class="col">
                         <label class="mt-2">Video URL</label>
-                        <input type="text" class="form-control" name="video_url"/>
+                        <input type="text" class="form-control" name="video_url" required />
                       </div>
                       <div class="col">
                         <label class="mt-2">Upload Date</label>
-                        <input type="date" class="form-control" name="upload_date"/>
+                        <input type="date" class="form-control" name="upload_date" required />
                       </div>
                     </div>
                    <div class="row">
@@ -79,5 +90,15 @@
   include('footer.php');
 ?>
 
+<script type="text/javascript">
+  $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+      $("#success-alert").slideUp(500);
+      window.location.href = 'list_video.php';
+  });
 
+  $("#danger-alert").fadeTo(2000, 500).slideUp(500, function(){
+      $("#danger-alert").slideUp(500);
+      window.location.href = 'add_video.php';
+  });
+</script>
 
